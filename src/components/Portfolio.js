@@ -350,7 +350,7 @@ const Portfolio = () => {
                       <img src="img/thumbs/42-56.jpg" alt="image" />
                       <div
                         className="main"
-                        data-img-url="img/portfolio/harsh.jpeg"
+                        data-img-url="img/portfolio/blog.jpg"
                       />
                     </a>
                   </div>
