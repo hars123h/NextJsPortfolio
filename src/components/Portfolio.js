@@ -210,7 +210,7 @@ const Portfolio = () => {
                     data-title="SLIET-Coe"
                     data-category="template"
                   >
-                    <a className="zoom" href="https://hars123h.github.io/sliet-coe/index.html" target="_blank" rel="noopener noreferrer">
+                    <a className="zoom" href="https://hars123h.github.io/sliet-coe/index.html" >
                       <img src="img/thumbs/42-56.jpg" alt="image" />
                       <div
                         className="main"
@@ -231,7 +231,7 @@ const Portfolio = () => {
                     data-title="e-posture"
                     data-category="frontend"
                   >
-                    <a className="zoom" href="https://www.e-posture.jp/" target="_blank" rel="noopener noreferrer">
+                    <a className="zoom" href="https://www.e-posture.jp/" >
                       <img src="img/thumbs/42-34.jpg" alt="image" />
                       <div
                         className="main"
@@ -252,7 +252,7 @@ const Portfolio = () => {
                     data-title="Blog"
                     data-category="template"
                   >
-                    <a className="portfolio_popup" href="https://hars123h.github.io/Blog-template.github.io/" target="_blank" rel="noopener noreferrer">
+                    <a className="portfolio_popup" href="https://hars123h.github.io/Blog-template.github.io/" >
                       <img src="img/thumbs/42-34.jpg" alt="image" />
                       <div
                         className="main"
@@ -276,7 +276,7 @@ const Portfolio = () => {
                   > 
                     <a
                       className="popup-youtube"
-                      href="https://hars123h.github.io/beauty-parlour.github.io/" target="_blank" rel="noopener noreferrer"
+                      href="https://hars123h.github.io/beauty-parlour.github.io/"
                     >
                       <img src="img/thumbs/42-56.jpg" alt="image" />
                       <div
@@ -300,7 +300,7 @@ const Portfolio = () => {
                   >
                     <a
                       className="popup-vimeo"
-                      href="http://movies-reviewss.herokuapp.com/" target="_blank" rel="noopener noreferrer"
+                      href="http://movies-reviewss.herokuapp.com/"
                     >
                       <img src="img/thumbs/42-34.jpg" alt="image" />
                       <div
@@ -346,7 +346,7 @@ const Portfolio = () => {
                     data-title="Portfolio"
                     data-category="frontend"
                   >
-                    <a className="zoom" href="https://hars123h.github.io/tripathi-harsh.github.io/" target="_blank" rel="noopener noreferrer">
+                    <a className="zoom" href="https://hars123h.github.io/tripathi-harsh.github.io/" >
                       <img src="img/thumbs/42-56.jpg" alt="image" />
                       <div
                         className="main"
@@ -367,7 +367,7 @@ const Portfolio = () => {
                     data-title="Restraunt"
                     data-category="template"
                   >
-                    <a className="zoom" href="https://hars123h.github.io/restraunt.github.io/" target="_blank" rel="noopener noreferrer">
+                    <a className="zoom" href="https://hars123h.github.io/restraunt.github.io/" >
                       <img src="img/thumbs/42-34.jpg" alt="image" />
                       <div
                         className="main"
