@@ -18,7 +18,7 @@ const SharvilPopup = ({ open, close }) => {
                 />
               </div>
               <div className="portfolio_main_title">
-                <a href="https://sharvil-jp.com/" target="_blank" ><h3>Sharvil Business Group</h3></a>
+                <a href="https://sharvil-jp.com/" target="_blank" rel="noopener noreferrer"><h3>Sharvil Business Group</h3></a>
                 <span>
                   <a href="#">Frontend</a>
                 </span>
@@ -48,7 +48,7 @@ const SharvilPopup = ({ open, close }) => {
                     <li>
                       <span className="first">Website Link</span>
                       <span>
-                        <a href="https://sharvil-jp.com/" target="_blank">Sharvil Business Group</a>
+                        <a href="https://sharvil-jp.com/" target="_blank" rel="noopener noreferrer">Sharvil Business Group</a>
                       </span>
                     </li>
                     <li>

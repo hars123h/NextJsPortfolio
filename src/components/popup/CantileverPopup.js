@@ -18,7 +18,7 @@ const CantileverPopup = ({ open, close }) => {
               />
             </div>
             <div className="portfolio_main_title">
-              <a href="https://www.cantileverlabs.com/" target="_blank" ><h3>Cantilever Labs</h3></a>
+              <a href="https://www.cantileverlabs.com/" target="_blank" rel="noopener noreferrer"><h3>Cantilever Labs</h3></a>
               <span>
                 <a href="#">Full Stack</a>
               </span>
@@ -52,7 +52,7 @@ const CantileverPopup = ({ open, close }) => {
                   <li>
                     <span className="first">Website Link</span>
                     <span>
-                      <a href="https://www.cantileverlabs.com/" target="_blank">Cantilever Labs</a>
+                      <a href="https://www.cantileverlabs.com/" target="_blank" rel="noopener noreferrer">Cantilever Labs</a>
                     </span>
                   </li>
                   <li>

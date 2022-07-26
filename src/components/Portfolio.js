@@ -188,7 +188,7 @@ const Portfolio = () => {
                   >
                     <a
                       className="soundcloude_link mfp-iframe audio"
-                      href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471954807&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                      href="#"
                     >
                       <img src="img/thumbs/42-56.jpg" alt="image" />
                       <div
@@ -210,7 +210,7 @@ const Portfolio = () => {
                     data-title="SLIET-Coe"
                     data-category="template"
                   >
-                    <a className="zoom" href="https://hars123h.github.io/sliet-coe/index.html" target="_blank">
+                    <a className="zoom" href="https://hars123h.github.io/sliet-coe/index.html" target="_blank" rel="noopener noreferrer">
                       <img src="img/thumbs/42-56.jpg" alt="image" />
                       <div
                         className="main"
@@ -231,7 +231,7 @@ const Portfolio = () => {
                     data-title="e-posture"
                     data-category="frontend"
                   >
-                    <a className="zoom" href="https://www.e-posture.jp/" target="_blank">
+                    <a className="zoom" href="https://www.e-posture.jp/" target="_blank" rel="noopener noreferrer">
                       <img src="img/thumbs/42-34.jpg" alt="image" />
                       <div
                         className="main"
@@ -252,7 +252,7 @@ const Portfolio = () => {
                     data-title="Blog"
                     data-category="template"
                   >
-                    <a className="portfolio_popup" href="https://hars123h.github.io/Blog-template.github.io/" target="_blank">
+                    <a className="portfolio_popup" href="https://hars123h.github.io/Blog-template.github.io/" target="_blank" rel="noopener noreferrer">
                       <img src="img/thumbs/42-34.jpg" alt="image" />
                       <div
                         className="main"
@@ -276,7 +276,7 @@ const Portfolio = () => {
                   > 
                     <a
                       className="popup-youtube"
-                      href="https://hars123h.github.io/beauty-parlour.github.io/" target="_blank"
+                      href="https://hars123h.github.io/beauty-parlour.github.io/" target="_blank" rel="noopener noreferrer"
                     >
                       <img src="img/thumbs/42-56.jpg" alt="image" />
                       <div
@@ -300,7 +300,7 @@ const Portfolio = () => {
                   >
                     <a
                       className="popup-vimeo"
-                      href="http://movies-reviewss.herokuapp.com/" target="_blank"
+                      href="http://movies-reviewss.herokuapp.com/" target="_blank" rel="noopener noreferrer"
                     >
                       <img src="img/thumbs/42-34.jpg" alt="image" />
                       <div
@@ -346,7 +346,7 @@ const Portfolio = () => {
                     data-title="Portfolio"
                     data-category="frontend"
                   >
-                    <a className="zoom" href="https://hars123h.github.io/tripathi-harsh.github.io/" target="_blank">
+                    <a className="zoom" href="https://hars123h.github.io/tripathi-harsh.github.io/" target="_blank" rel="noopener noreferrer">
                       <img src="img/thumbs/42-56.jpg" alt="image" />
                       <div
                         className="main"
@@ -367,7 +367,7 @@ const Portfolio = () => {
                     data-title="Restraunt"
                     data-category="template"
                   >
-                    <a className="zoom" href="https://hars123h.github.io/restraunt.github.io/" target="_blank">
+                    <a className="zoom" href="https://hars123h.github.io/restraunt.github.io/" target="_blank" rel="noopener noreferrer">
                       <img src="img/thumbs/42-34.jpg" alt="image" />
                       <div
                         className="main"

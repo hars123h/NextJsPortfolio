@@ -18,8 +18,8 @@ const ShopifyPopup = ({ open, close }) => {
                             />
                         </div>
                         <div className="portfolio_main_title">
-                            <a href="https://cloud-jp.net/" target="_blank" ><h3>Cloud</h3></a>
-                            <a href="https://shop.cloud-jp.net/" target="_blank" ><h3>Cloud Shop</h3></a>
+                            <a href="https://cloud-jp.net/" target="_blank" rel="noopener noreferrer"><h3>Cloud</h3></a>
+                            <a href="https://shop.cloud-jp.net/" target="_blank" rel="noopener noreferrer"><h3>Cloud Shop</h3></a>
                             <span>
                                 <a href="#">Shopify</a>
                             </span>
@@ -49,14 +49,14 @@ const ShopifyPopup = ({ open, close }) => {
                                     <li>
                                         <span className="first">Website Link 1</span>
                                         <span>
-                                            <a href="https://cloud-jp.net/" target="_blank">Cloud</a>
+                                            <a href="https://cloud-jp.net/" target="_blank" rel="noopener noreferrer">Cloud</a>
                                         </span>
                                     </li>
 
                                     <li>
                                         <span className="first">Website Link 2</span>
                                         <span>
-                                            <a href="https://shop.cloud-jp.net/" target="_blank">Cloud Shop</a>
+                                            <a href="https://shop.cloud-jp.net/" target="_blank" rel="noopener noreferrer">Cloud Shop</a>
                                         </span>
                                     </li>
 
