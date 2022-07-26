@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Jean-Gabriel Paquette",
+    "img": "img/testimonials/jean.jfif",
+    "profession": "CEO-Kryptup",
+    "details": "I rarely like to write reviews, but the Marketify team truly deserve a standing ovation for their customer support, customisation and most importantly, friendliness and professionalism. Many thanks once again for everything and hope that I get to deal with you again in the near future."
+  },
+  {
+    "name": "Shreshth Sapra",
+    "img": "img/testimonials/shrey.jpeg",
+    "profession": "-SHARVIL Business PVT LTD",
+    "details": "Harsh has proven himself to be most reliable programmer for us, when it comes to faster and very accurate tasks.He sticks to the timeline and understands the urgency as a company to its core. Our company is looking forward to do multiple projects together with him in the future."
+  },
+  {
+    "name": "BOAZ BAR",
+    "img": "img/testimonials/6.jpg",
+    "profession": "Developer",
+    "details": "Thank you for your help"
+  },
+  {
+    "name": "Bavo Knaeps",
+    "img": "img/testimonials/Bavo.jfif",
+    "profession": "Full Stack Web Developer",
+    "details": "Very pleasant to work with !. Fast responses and adjusts well to feedback. Has comprehensive understanding of new technologies with correct implementations."
+  },
+  {
+    "name": "Sachin_Korla",
+    "img": "img/testimonials/t3.jpg",
+    "profession": "Internwell",
+    "details": "Harsh is a great team player and is proficient in Website UI - Backend Development.  Harsh worked for the InternWell website and did a very commendable job on time.  I wish him great success ahead."
+  }
+]

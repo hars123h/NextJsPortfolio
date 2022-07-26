@@ -1,0 +1,55 @@
+
+
+{
+  "name": "Harsh Tripathi",
+  "address": "India",
+  "bio": "I'm a Full Stack Web Developer based in India, and I'm very passionate and dedicated to my work.",
+  "mainSkill": "Full Stack Web Developer",
+  "img": "/img/slider/avatar.png",
+  "skills": [
+    {
+      "name": "ReactJs",
+      "color": "rgb(247, 80, 35)",
+      "value": 90
+    },
+    {
+      "name": "NodeJs",
+      "color": "rgb(128, 103, 240)",
+      "value": 80
+    },
+   
+    {
+      "name": "ExpressJs ",
+      "color": "rgb(247, 80, 35)",
+      "value": 85
+    },
+    {
+      "name": "MongoDB ",
+      "color": "rgb(128, 103, 240)",
+      "value": 75
+    },
+    {
+      "name": "NextjS ",
+      "color": "rgb(247, 80, 35)",
+      "value": 85
+    },
+    {
+      "name": "WordPress and Shopify ",
+      "color": "rgb(128, 103, 240)",
+      "value": 60
+    }
+
+   
+  ],
+  "social": [
+    { "name": "facebook", "icon": "icon-facebook-1", "url": "#" },
+    { "name": "twitter", "icon": "icon-twitter-1", "url": "#" },
+    { "name": "linkedin", "icon": "icon-linkedin-1", "url": "#" },
+    { "name": "behance", "icon": "icon-behance", "url": "#" }
+  ],
+  "contact": {
+    "address": "Allahabad, Uttar Pradesh, India",
+    "email": "tripathihk2014@gmail.com",
+    "phn": "+91 6387522891"
+  }
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "link": "#",
+    "logo": {
+      "light": "img/partners/light/sharvil.png",
+      "dark": "img/partners/dark/sharvil.png"
+    }
+  },
+  {
+    "link": "#",
+    "logo": {
+      "light": "img/partners/light/cloud.webp",
+      "dark": "img/partners/light/cloud.webp"
+    }
+  },
+  {
+    "link": "#",
+    "logo": {
+      "light": "img/partners/light/mbs.png",
+      "dark": "img/partners/light/mbs.png"
+    }
+  },
+  {
+    "link": "#",
+    "logo": {
+      "light": "img/partners/light/internlogo.png",
+      "dark": "img/partners/light/internlogo.png"
+    }
+  },
+  {
+    "link": "#",
+    "logo": {
+      "light": "img/partners/light/canti.png",
+      "dark": "img/partners/dark/canti.png"
+    }
+  },
+  {
+    "link": "#",
+    "logo": {
+      "light": "img/partners/light/k.png",
+      "dark": "img/partners/dark/k.png"
+    }
+  },
+  {
+    "link": "#",
+    "logo": {
+      "light": "img/partners/light/coe.png",
+      "dark": "img/partners/light/coe.png"
+    }
+  },
+  {
+    "link": "#",
+    "logo": {
+      "light": "img/partners/light/eposture.png",
+      "dark": "img/partners/light/eposture.png"
+    }
+  }
+]
