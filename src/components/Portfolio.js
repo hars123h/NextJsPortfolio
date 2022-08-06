@@ -36,7 +36,7 @@ const Portfolio = () => {
   }, []);
   useEffect(() => {
     if (isotope.current) {
-      filterKey === "*"
+      filterKey == "*"
         ? isotope.current.arrange({ filter: `*` })
         : isotope.current.arrange({ filter: `.${filterKey}` });
     }
@@ -267,7 +267,7 @@ const Portfolio = () => {
                 </div>
               </li>
 
-              {/* <li className="template grid-item">
+               <li className="template grid-item">
                 <div className="inner">
                   <div
                     className="entry dizme_tm_portfolio_animation_wrap"
@@ -401,7 +401,7 @@ const Portfolio = () => {
                     <span>Full Stack</span>
                   </div>
                 </div>
-              </li> */}
+              </li> 
             </ul>
           </div>
         </div>
