@@ -6,7 +6,7 @@ import DetailsPopup from "./popup/DetailsPopup";
 import MbsPopup from "./popup/MbsPopup";
 import SharvilPopup from "./popup/SharvilPopup";
 import ShopifyPopup from "./popup/ShopifyPopup";
-
+import Image from 'next/image';
 const Portfolio = () => {
   useEffect(() => {
     dataImage();
