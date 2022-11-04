@@ -15,7 +15,7 @@ const Portfolio = () => {
 
   // Isotope
   const isotope = useRef();
-  const [filterKey, setFilterKey] = useState("");
+  const [filterKey, setFilterKey] = useState("fullstack");
   useEffect(() => {
     setTimeout(() => {
       isotope.current = new Isotope(".gallery_zoom", {
