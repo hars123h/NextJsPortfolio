@@ -20,7 +20,7 @@ const Portfolio = () => {
     setTimeout(() => {
       isotope.current = new Isotope(".gallery_zoom", {
         itemSelector: ".grid-item",
-        //    layoutMode: "fitRows",
+           layoutMode: "fitRows",
         percentPosition: true,
         masonry: {
           columnWidth: ".grid-item",
@@ -83,7 +83,7 @@ const Portfolio = () => {
                   className={`c-pointer ${activeBtn("*")}`}
                   onClick={handleFilterKeyChange("*")}
                 >
-                  AllS
+                  All
                 </a>
               </li>
               <li>
