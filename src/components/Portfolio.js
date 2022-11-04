@@ -15,7 +15,7 @@ const Portfolio = () => {
 
   // Isotope
   const isotope = useRef();
-  const [filterKey, setFilterKey] = useState("*");
+  const [filterKey, setFilterKey] = useState("");
   useEffect(() => {
     setTimeout(() => {
       isotope.current = new Isotope(".gallery_zoom", {
@@ -83,7 +83,7 @@ const Portfolio = () => {
                   className={`c-pointer ${activeBtn("*")}`}
                   onClick={handleFilterKeyChange("*")}
                 >
-                  All
+                  AllS
                 </a>
               </li>
               <li>
