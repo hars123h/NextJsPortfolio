@@ -91,7 +91,7 @@ const Portfolio = () => {
                   className={`c-pointer ${activeBtn("fullstack")}`}
                   onClick={handleFilterKeyChange("fullstack")}
                 >
-                  Full StackS
+                  Full Stack
                 </a>
               </li>
               <li>
@@ -140,7 +140,7 @@ const Portfolio = () => {
                   > 
                     <a
                       className="popup-youtube"
-                      href="#"
+                      
                     >
                       <img src="img/thumbs/42-56.jpg" alt="image" height={480} />
                       <div
@@ -278,7 +278,7 @@ const Portfolio = () => {
                       className="popup-youtube"
                       href="https://hars123h.github.io/beauty-parlour.github.io/"
                     >
-                      <img src="img/thumbs/42-56.jpg" alt="image" />
+                      <img src="img/thumbs/42-56.jpg" alt="image" height={480} />
                       <div
                         className="main"
                         data-img-url="img/portfolio/beauty.png"
@@ -302,7 +302,7 @@ const Portfolio = () => {
                       className="popup-vimeo"
                       href="http://movies-reviewss.herokuapp.com/"
                     >
-                      <img src="img/thumbs/42-34.jpg" alt="image" />
+                      <img src="img/thumbs/42-34.jpg" alt="image" height={270} />
                       <div
                         className="main"
                         data-img-url="img/portfolio/review.png"
@@ -326,7 +326,7 @@ const Portfolio = () => {
                       className="soundcloude_link mfp-iframe audio"
                       href="#"
                     >
-                      <img src="img/thumbs/42-56.jpg" alt="image" />
+                      <img src="img/thumbs/42-56.jpg" alt="image" height={480} />
                       <div
                         className="main"
                         data-img-url="img/portfolio/cloud.webp"
@@ -347,7 +347,7 @@ const Portfolio = () => {
                     data-category="frontend"
                   >
                     <a className="zoom" href="https://hars123h.github.io/tripathi-harsh.github.io/" >
-                      <img src="img/thumbs/42-56.jpg" alt="image" />
+                      <img src="img/thumbs/42-56.jpg" alt="image" height={480} />
                       <div
                         className="main"
                         data-img-url="img/portfolio/blog.jpg"
@@ -368,7 +368,7 @@ const Portfolio = () => {
                     data-category="template"
                   >
                     <a className="zoom" href="https://hars123h.github.io/restraunt.github.io/" >
-                      <img src="img/thumbs/42-34.jpg" alt="image" />
+                      <img src="img/thumbs/42-34.jpg" alt="image" height={270} />
                       <div
                         className="main"
                         data-img-url="img/portfolio/straw.png"
@@ -389,7 +389,7 @@ const Portfolio = () => {
                     data-category="fullstack"
                   >
                     <a className="portfolio_popup" href="#">
-                      <img src="img/thumbs/42-34.jpg" alt="image" />
+                      <img src="img/thumbs/42-34.jpg" alt="image" height={270} />
                       <div
                         className="main"
                         data-img-url="img/portfolio/cant.jfif"

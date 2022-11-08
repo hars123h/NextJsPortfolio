@@ -3,7 +3,7 @@ const MbsPopup = ({ open, close }) => {
       <div className={`dizme_tm_modalbox ${open ? "opened" : ""}`}>
         <div className="box_inner">
           <div className="close">
-            <a href="#" onClick={() => close()}>
+            <a  onClick={() => close()}>
               <i className="icon-cancel" />
             </a>
           </div>
