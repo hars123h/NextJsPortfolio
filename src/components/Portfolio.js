@@ -20,11 +20,11 @@ const Portfolio = () => {
     setTimeout(() => {
       isotope.current = new Isotope(".gallery_zoom", {
         itemSelector: ".grid-item",
-           layoutMode: "fitRows",
+          //  layoutMode: "fitRows",
         percentPosition: true,
-        masonry: {
-          columnWidth: ".grid-item",
-        },
+        // masonry: {
+        //   columnWidth: ".grid-item",
+        // },
         animationOptions: {
           duration: 750,
           easing: "linear",
@@ -91,7 +91,7 @@ const Portfolio = () => {
                   className={`c-pointer ${activeBtn("fullstack")}`}
                   onClick={handleFilterKeyChange("fullstack")}
                 >
-                  Full Stack
+                  Full StackS
                 </a>
               </li>
               <li>
@@ -142,7 +142,7 @@ const Portfolio = () => {
                       className="popup-youtube"
                       href="#"
                     >
-                      <img src="img/thumbs/42-56.jpg" alt="image" />
+                      <img src="img/thumbs/42-56.jpg" alt="image" height={480} />
                       <div
                         className="main"
                         data-img-url="img/portfolio/mbs.jpg"
@@ -166,7 +166,7 @@ const Portfolio = () => {
                       className="popup-vimeo"
                       href="#"
                     >
-                      <img src="img/thumbs/42-34.jpg" alt="image" />
+                      <img src="img/thumbs/42-34.jpg" alt="image" height={270} />
                       <div
                         className="main"
                         data-img-url="img/portfolio/sharvil.jpg"
@@ -190,7 +190,7 @@ const Portfolio = () => {
                       className="soundcloude_link mfp-iframe audio"
                       href="#"
                     >
-                      <img src="img/thumbs/42-56.jpg" alt="image" />
+                      <img src="img/thumbs/42-56.jpg" alt="image" height={480} />
                       <div
                         className="main"
                         data-img-url="img/portfolio/internwell.jpg"
@@ -211,7 +211,7 @@ const Portfolio = () => {
                     data-category="template"
                   >
                     <a className="zoom" href="https://hars123h.github.io/sliet-coe/index.html" >
-                      <img src="img/thumbs/42-56.jpg" alt="image" />
+                      <img src="img/thumbs/42-56.jpg" alt="image" height={480} />
                       <div
                         className="main"
                         data-img-url="img/portfolio/sliet.jpg"
@@ -232,7 +232,7 @@ const Portfolio = () => {
                     data-category="frontend"
                   >
                     <a className="zoom" href="https://www.e-posture.jp/" >
-                      <img src="img/thumbs/42-34.jpg" alt="image" />
+                      <img src="img/thumbs/42-34.jpg" alt="image" height={270} />
                       <div
                         className="main"
                         data-img-url="img/portfolio/eposture.png"
@@ -253,7 +253,7 @@ const Portfolio = () => {
                     data-category="template"
                   >
                     <a className="portfolio_popup" href="https://hars123h.github.io/Blog-template.github.io/" >
-                      <img src="img/thumbs/42-34.jpg" alt="image" />
+                      <img src="img/thumbs/42-34.jpg" alt="image" height={270} />
                       <div
                         className="main"
                         data-img-url="img/portfolio/blog.jpg"
