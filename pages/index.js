@@ -45,7 +45,7 @@ const Index = () => {
 
     }
     else if(!mode) {
-      document.querySelector("body").classList.add("dark");
+      document.querySelector("body").classList.remove("dark");
 
     }
   }, [context.toggle]);
