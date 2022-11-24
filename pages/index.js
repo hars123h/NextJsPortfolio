@@ -13,8 +13,7 @@ import Service from "../src/components/Service";
 import Skills from "../src/components/Skills";
 import Testimonial from "../src/components/Testimonial";
 import Layout from "../src/layout/Layout";
-import IndexDark from "./index-dark";
-import IndexLight from "./indexLight";
+
 
 
 const Portfolio = dynamic(() => import("../src/components/Portfolio"), {
