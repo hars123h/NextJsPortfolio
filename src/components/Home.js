@@ -13,18 +13,56 @@ import { BsWordpress } from "react-icons/bs";
 
 const Home = ({ dark }) => {
   const [data, setData] = useState({});
+  const [mode, setMode] = useState("")
+  const [toggle, setToggle] = useState(false)
   useEffect(async () => {
     setData(await fatchData("/static/info.json"));
   }, []);
+  const handleLight =() => {
+    // alert("Hello")
+    localStorage.setItem("mode", "dark");
+    setToggle(!toggle)
+  }
+  const handleDark =() => {
+    // alert("Hello")
+    localStorage.setItem("mode", "light");
+    setToggle(!toggle)
+
+  }
+  // let item;
+  useEffect(() => {
+    // Perform localStorage action
+     let item = localStorage.getItem('mode')
+     setMode(item)
+  }, [toggle])
+
+  console.log("MODE", mode);
 
   return (
+    
     <div className="dizme_tm_section" id="home">
+      <div className="modeDark" >
+        {
+         mode =="light" ? (
+            <diV className="lightMode" onClick={handleLight}>
+                 <img src="/img/mode/light.png" alt="" />
+            </diV>
+
+          ): (
+           <div onClick={handleDark}>
+              <img src="/img/mode/dark.png" alt="" />
+
+            </div>
+          )
+        }
+      </div>
       <div className="dizme_tm_hero">
         <div
           className="background"
           data-img-url={`img/slider/${dark ? 2 : 1}.jpg`}
         // style={{ backgroundImage: `img/slider/${dark ? 2 : 1}.jpg` }}
         />
+        
         <div className="container">
           <div className="content">
             <div className="details">

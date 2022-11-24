@@ -3506,3 +3506,36 @@ input[type="number"] {
     margin-bottom: 120px;
   }
 }
+
+
+
+.modeDark {
+  position: fixed;
+  bottom:60px !important;
+  left: 30px !important;
+  z-index: 400;
+}
+.modeDark img {
+  width: 40px;
+}
+.lightMode {
+  height: 40px;
+  width: 40px;
+  background-color: ghostwhite;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lightMode img {
+  
+  width: 25px !important;
+}
+@media only screen and (max-width: 500px) {
+  .modeDark {
+    position: fixed;
+    bottom:10px !important;
+    left: 10px !important;
+    z-index: 400;
+  }
+}
