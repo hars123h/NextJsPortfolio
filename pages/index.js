@@ -1,7 +1,8 @@
 import dynamic from "next/dynamic";
 import Head from "next/head";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import About from "../src/components/About";
+import AppContext from "../src/components/AppContext";
 import Contact from "../src/components/Contact";
 import Home from "../src/components/Home";
 import News from "../src/components/News";
@@ -15,71 +16,114 @@ import Layout from "../src/layout/Layout";
 import IndexDark from "./index-dark";
 import IndexLight from "./indexLight";
 
+
 const Portfolio = dynamic(() => import("../src/components/Portfolio"), {
   ssr: false,
 });
 
 const Index = () => {
+  const context = useContext(AppContext)
   const [mode, setMode] = useState("");
-  const [toggle, setToggle] = useState(false)
-
   useEffect(() => {
     // Perform localStorage action
     let item = localStorage.getItem('mode')
+   
     setMode(item)
-  }, [toggle]);
+  }, [context.toggle]);
 
-  const handleLight = () => {
-    // alert("Hello")
-    localStorage.setItem("mode", "dark");
-    setToggle(!toggle)
-  }
-  const handleDark = () => {
-    // alert("Hello")
-    localStorage.setItem("mode", "light");
-    setToggle(!toggle)
+  // console.log("modeeee", mode);
 
-  }
+  useEffect(() => {
+    console.log("mdddd", mode);
+    if(mode == "dark") {
+      console.log("thisis check");
+      document.querySelector("body").classList.add("dark");
+    }
+
+    if(mode == "light") {
+      document.querySelector("body").classList.remove("dark");
+
+    }
+  }, [context.toggle]);
+
+ 
   // let item;
 
 
   return (
 
-    <div>
+    <>
       {
-        mode == "light" ? (
-         
-          <IndexDark />
-          
-          
-        
-
+        mode == "light" || "" ? (
+          <Layout dark>
+          {/* <Head>
+            <title>Dizme | Home</title>
+          </Head> */}
+          <Home dark />
+          {/* HERO */}
+          {/* PROCESS */}
+          <Process dark />
+          {/* /PROCESS */}
+          {/* ABOUT */}
+          <About dark />
+          {/* /ABOUT */}
+          {/* PORTFOLIO */}
+          <Portfolio />
+          {/* /PORTFOLIO */}
+          {/* SKILLS */}
+          <Skills dark />
+          {/* /SKILLS */}
+          {/* SERVICES */}
+          {/* <Service dark /> */}
+          {/* /SERVICES */}
+          {/* TESTIMONIALS */}
+          <Testimonial />
+          {/* /TESTIMONIALS */}
+          {/* PARTNERS */}
+          <Partners dark />
+          {/* /PARTNERS */}
+          {/* NEWS */}
+          {/* <News />
+          <Newsletter /> */}
+          <Contact />
+        </Layout>
         ) : (
-          
-          
-          <IndexLight />
-
-         
-
+          <Layout>
+      <Head>
+        <title>Dizme | Home</title>
+      </Head>
+      <Home  />
+      {/* HERO */}
+      {/* PROCESS */}
+      <Process />
+      {/* /PROCESS */}
+      {/* ABOUT */}
+      <About />
+      {/* /ABOUT */}
+      {/* PORTFOLIO */}
+      <Portfolio />
+      {/* /PORTFOLIO */}
+      {/* SKILLS */}
+      <Skills />
+      {/* /SKILLS */}
+      {/* SERVICES */}
+      {/* <Service /> */}
+      {/* /SERVICES */}
+      {/* TESTIMONIALS */}
+      <Testimonial />
+      {/* /TESTIMONIALS */}
+      {/* PARTNERS */}
+      <Partners />
+      {/* /PARTNERS */}
+      {/* NEWS */}
+      {/* <News />
+      <Newsletter /> */}
+      <Contact />
+    </Layout>
         )
       }
 
-{/* 
-      {
-        mode == "light" ? (
-          
-
-        ) : (
-          <div className="modeDark" >
-
-            <div onClick={handleDark}>
-              <img src="/img/mode/dark.png" alt="" />
-            </div>
-          </div>
-
-        )
-      } */}
-    </div>
+    </>
 
 
   );

@@ -17,7 +17,7 @@ const Portfolio = dynamic(() => import("../src/components/Portfolio"), {
   ssr: false,
 });
 
-const IndexDark = () => { 
+const indexDark = () => { 
   useEffect(() => {
     document.querySelector("body").classList.add("dark");
   }, []);
@@ -57,4 +57,4 @@ const IndexDark = () => {
     </Layout>
   );
 };
-export default IndexDark;
+export default indexDark;

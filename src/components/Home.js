@@ -1,11 +1,12 @@
 import parse from "html-react-parser";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { fatchData } from "../utilits";
 import { SiExpress, SiMongodb } from "react-icons/si";
 import { RiReactjsFill } from "react-icons/ri";
 import { IoLogoNodejs } from "react-icons/io5";
-
 import { BsWordpress } from "react-icons/bs";
+import AppContext from "./AppContext";
+
 
 
 
@@ -14,27 +15,27 @@ import { BsWordpress } from "react-icons/bs";
 const Home = ({ dark }) => {
   const [data, setData] = useState({});
   const [mode, setMode] = useState("")
-  const [toggle, setToggle] = useState(false)
+  // const [toggle, setToggle] = useState(false)
+  const context = useContext(AppContext)
   useEffect(async () => {
     setData(await fatchData("/static/info.json"));
   }, []);
   const handleLight =() => {
     // alert("Hello")
     localStorage.setItem("mode", "dark");
-    setToggle(!toggle)
+    context.setToggle(!context.toggle)
   }
   const handleDark =() => {
     // alert("Hello")
     localStorage.setItem("mode", "light");
-    setToggle(!toggle)
-
+    context.setToggle(!context.toggle)
   }
   // let item;
   useEffect(() => {
     // Perform localStorage action
      let item = localStorage.getItem('mode')
      setMode(item)
-  }, [toggle])
+  }, [context.toggle])
 
   console.log("MODE", mode);
 

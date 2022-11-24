@@ -1,13 +1,15 @@
 import Head from "next/head";
-import { Fragment } from "react";
+import { createContext, Fragment, useState } from "react";
+import AppContext from "../src/components/AppContext";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
+  const [toggle, setToggle] = useState(false)
   return (
-    <Fragment>
+    <AppContext.Provider value={{toggle, setToggle}}>
       <Head />
       <Component {...pageProps} />
-    </Fragment>
+    </AppContext.Provider>
   );
 }
 

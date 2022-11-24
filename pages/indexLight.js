@@ -20,7 +20,7 @@ const Portfolio = dynamic(() => import("../src/components/Portfolio"), {
 
 
   
-const IndexLight = () => {
+const indexLight = () => {
   return (
     <Layout>
       <Head>
@@ -56,4 +56,4 @@ const IndexLight = () => {
     </Layout>
   );
 };
-export default IndexLight;
+export default indexLight;
