@@ -22,30 +22,34 @@ const Portfolio = dynamic(() => import("../src/components/Portfolio"), {
 
 const Index = () => {
   const context = useContext(AppContext)
-  const [mode, setMode] = useState("");
-  useEffect(() => {
-    // Perform localStorage action
-    let item = localStorage.getItem('mode')
+  // const [mode, setMode] = useState("");
+  // useEffect(() => {
+  //   // Perform localStorage action
+  //   let item = localStorage.getItem('mode')
    
-    setMode(item)
-  }, [context.toggle]);
+  //   setMode(item)
+  // }, [context.toggle]);
 
   // console.log("modeeee", mode);
 
   useEffect(() => {
-    console.log("mdddd", mode);
+    console.log("mdddd", context.mode);
     
-    if(mode == "dark") {
+    if(context.mode == "light") {
       console.log("thisis check");
       document.querySelector("body").classList.add("dark");
     }
 
-   else if(mode == "light") {
+   else if(context.mode == "dark") {
       document.querySelector("body").classList.remove("dark");
 
     }
-    else if(!mode) {
+    else if(!context.mode) {
       document.querySelector("body").classList.remove("dark");
+
+    }
+    else if(context.mode ==null) {
+      document.querySelector("body").classList.add("dark");
 
     }
   }, [context.toggle]);
@@ -58,7 +62,7 @@ const Index = () => {
 
     <>
       {
-        mode == "light"? (
+        context.mode == "light"? (
           <Layout dark>
           <Head>
             <title>Dizme | Home</title>

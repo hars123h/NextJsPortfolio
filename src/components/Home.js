@@ -14,7 +14,7 @@ import AppContext from "./AppContext";
 
 const Home = ({ dark }) => {
   const [data, setData] = useState({});
-  const [mode, setMode] = useState("")
+  // const [mode, setMode] = useState("")
   // const [toggle, setToggle] = useState(false)
   const context = useContext(AppContext)
   useEffect(async () => {
@@ -22,29 +22,31 @@ const Home = ({ dark }) => {
   }, []);
   const handleLight =() => {
     // alert("Hello")
-    localStorage.setItem("mode", "dark");
+    // localStorage.setItem("mode", "dark");
+    context.setMode("dark");
     context.setToggle(!context.toggle)
   }
   const handleDark =() => {
     // alert("Hello")
-    localStorage.setItem("mode", "light");
+    // localStorage.setItem("mode", "light");
+    context.setMode("light")
     context.setToggle(!context.toggle)
   }
   // let item;
-  useEffect(() => {
-    // Perform localStorage action
-     let item = localStorage.getItem('mode')
-     setMode(item)
-  }, [context.toggle])
+  // useEffect(() => {
+  //   // Perform localStorage action
+  //    let item = localStorage.getItem('mode')
+  //    setMode(item)
+  // }, [context.toggle])
 
-  console.log("MODE", mode);
+  console.log("MODE", context.mode);
 
   return (
     
     <div className="dizme_tm_section" id="home">
       <div className="modeDark" >
         {
-         mode =="light" ? (
+         context.mode =="light" ? (
             <diV className="lightMode" onClick={handleLight}>
                  <img src="/img/mode/light.png" alt="" />
             </diV>
