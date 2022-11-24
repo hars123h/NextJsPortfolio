@@ -52,7 +52,6 @@ const Home = ({ dark }) => {
           ): (
            <div onClick={handleDark}>
               <img src="/img/mode/dark.png" alt="" />
-
             </div>
           )
         }

@@ -34,13 +34,18 @@ const Index = () => {
 
   useEffect(() => {
     console.log("mdddd", mode);
+    
     if(mode == "dark") {
       console.log("thisis check");
       document.querySelector("body").classList.add("dark");
     }
 
-    if(mode == "light") {
+   else if(mode == "light") {
       document.querySelector("body").classList.remove("dark");
+
+    }
+    else if(!mode) {
+      document.querySelector("body").classList.add("dark");
 
     }
   }, [context.toggle]);
@@ -53,11 +58,11 @@ const Index = () => {
 
     <>
       {
-        mode == "light" || "" ? (
+        mode == "light"? (
           <Layout dark>
-          {/* <Head>
+          <Head>
             <title>Dizme | Home</title>
-          </Head> */}
+          </Head>
           <Home dark />
           {/* HERO */}
           {/* PROCESS */}
@@ -88,9 +93,7 @@ const Index = () => {
         </Layout>
         ) : (
           <Layout>
-      <Head>
-        <title>Dizme | Home</title>
-      </Head>
+     
       <Home  />
       {/* HERO */}
       {/* PROCESS */}
