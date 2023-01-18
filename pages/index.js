@@ -65,7 +65,7 @@ const Index = () => {
         context.mode == "light"? (
           <Layout dark>
           <Head>
-            <title>Dizme | Home</title>
+            <title>Histoni | Home</title>
           </Head>
           <Home dark />
           {/* HERO */}
