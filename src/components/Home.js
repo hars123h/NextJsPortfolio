@@ -90,7 +90,7 @@ const Home = ({ dark }) => {
                   </a>
                 </div>
                 <div className="social">
-                  <ul>
+                  {/* <ul>
                     {data &&
                       data.social &&
                       data.social.map((social, i) => (
@@ -100,7 +100,7 @@ const Home = ({ dark }) => {
                           </a>
                         </li>
                       ))}
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
             </div>
