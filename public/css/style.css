@@ -3137,6 +3137,7 @@ input[type="number"] {
   .dizme_tm_hero .avatar img {
     max-width: 300px;
     max-height: 300px;
+    margin-top: 10px;
   }
   .dizme_tm_hero .skills {
     display: none;

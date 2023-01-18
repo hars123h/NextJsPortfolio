@@ -1,17 +1,72 @@
 import { useEffect, useState } from "react";
 import { fatchData } from "../utilits";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
+import axios from "axios";
 const Contact = () => {
   const [data, setData] = useState({});
   useEffect(async () => {
     setData(await fatchData("/static/info.json"));
   }, []);
+
+  const [formObj, setFormObj] = useState({
+    subject: "",
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  })
+  function isValidEmail(email) {
+    return /\S+@\S+\.\S+/.test(email);
+  }
+
+  const handleChange = event => {
+    // if (!isValidEmail(event.target.value)) {
+    //     toast.error("Not a ValidEmail")
+    // } 
+
+    setFormObj({ ...formObj, email: event.target.value })
+  };
+
+
+  const sendContactMail = async (e) => {
+    e.preventDefault()
+    if (!isValidEmail(formObj.email)) {
+      toast.error("Please enter a valid email address")
+    }
+    else {
+      const response = await axios({
+        method: "post",
+        url: "https://formspree.io/f/mzboynnq",
+        data: {
+          ...formObj
+        }
+      })
+
+      if (response.status === 200) {
+        setFormObj({ subject: "", name: "", email: '', phone: '', message: "" })
+        toast.success("Your mail is sent. We will contact you as soon as possible.")
+        console.log("Your mail is sent. We will contact you as soon as possible.")
+      }
+      else {
+        toast.error("Oops. Something went wrong")
+        console.log("Oops. Something went wrong")
+
+      }
+    }
+
+  }
+
   return (
     <div className="dizme_tm_section" id="contact">
+      <ToastContainer
+        theme='colored'
+      />
       <div className="dizme_tm_contact">
         <div className="container">
           <div className="dizme_tm_main_title" data-align="center">
             <span>Contact Me</span>
-            <h3>I Want To Hear From You</h3>
+            <h3>We Want To Hear From You</h3>
             <p>
               Please fill out the form on this section to contact with me. Or
               call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday
@@ -62,10 +117,7 @@ const Contact = () => {
             <div className="right wow fadeInRight" data-wow-duration="1s">
               <div className="fields">
                 <form
-                  action="/"
-                  method="post"
-                  className="contact_form"
-                  id="contact_form"
+
                   autoComplete="off"
                 >
                   <div
@@ -78,13 +130,20 @@ const Contact = () => {
                   <div className="input_list">
                     <ul>
                       <li>
-                        <input id="name" type="text" placeholder="Your Name" />
+                        <input id="name"
+                          type="text"
+                          placeholder="Your Name"
+                          value={formObj.name}
+                          onChange={e => setFormObj({ ...formObj, name: e.target.value })}
+                        />
                       </li>
                       <li>
                         <input
                           id="email"
                           type="text"
                           placeholder="Your Email"
+                          value={formObj.email}
+                          onChange={handleChange}
                         />
                       </li>
                       <li>
@@ -92,10 +151,17 @@ const Contact = () => {
                           id="phone"
                           type="number"
                           placeholder="Your Phone"
+                          value={formObj.phone}
+                          onChange={e => setFormObj({ ...formObj, phone: e.target.value })}
                         />
                       </li>
                       <li>
-                        <input id="subject" type="text" placeholder="Subject" />
+                        <input id="subject"
+                          type="text"
+                          placeholder="Subject"
+                          value={formObj.subject}
+                          onChange={e => setFormObj({ ...formObj, subject: e.target.value })}
+                        />
                       </li>
                     </ul>
                   </div>
@@ -103,10 +169,11 @@ const Contact = () => {
                     <textarea
                       id="message"
                       placeholder="Write your message here"
-                      defaultValue={""}
+                      value={formObj.message}
+                      onChange={e => setFormObj({ ...formObj, message: e.target.value })}
                     />
                   </div>
-                  <div className="dizme_tm_button">
+                  <div className="dizme_tm_button" onClick={sendContactMail}>
                     <a id="send_message" href="#">
                       <span>Submit Now</span>
                     </a>
@@ -121,12 +188,18 @@ const Contact = () => {
           <div className="dizme_tm_map wow fadeInUp" data-wow-duration="1s">
             <div className="mapouter">
               <div className="gmap_canvas">
-              <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.612425309773!2d75.69558301482428!3d30.219607481818873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3910f8bd26a61ba3%3A0xa45e3a23dfc09f9b!2sSant%20Longowal%20Institute%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1612687981117!5m2!1sen!2sin"
-              height={375}
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14386.959393062345!2d81.3102865239052!3d25.646758389022974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399b3b22f820a70d%3A0x3dbaafb51035fe61!2sSirathu%2C%20Uttar%20Pradesh%20212217!5e0!3m2!1sen!2sin!4v1674018177353!5m2!1sen!2sin"
+                  height={375}
                   style={{ width: "100%" }}
-                  id="gmap_canvas"/>
-            
+                  id="gmap_canvas"
+                />
+                {/* <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.612425309773!2d75.69558301482428!3d30.219607481818873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3910f8bd26a61ba3%3A0xa45e3a23dfc09f9b!2sSant%20Longowal%20Institute%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1612687981117!5m2!1sen!2sin"
+                  height={375}
+                  style={{ width: "100%" }}
+                  id="gmap_canvas" /> */}
+
                 {/* <iframe
                   height={375}
                   style={{ width: "100%" }}

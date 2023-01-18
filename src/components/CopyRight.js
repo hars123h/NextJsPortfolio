@@ -8,11 +8,11 @@ const CopyRight = ({ brandName }) => {
               <p>
                 Developed by{" "}
                 <a
-                  href="https://themeforest.net/user/codeefly"
-                  target="_blank"
-                  rel="noreferrer"
+                  href="#"
+                 
+                  
                 >
-                  Harsh Tripathi
+                  Histoni Tech Solutions
                 </a>{" "}
                 © {new Date().getFullYear()}
               </p>

@@ -1,11 +1,11 @@
 
 
 {
-  "name": "Harsh Tripathi",
+  "name": "Professional",
   "address": "India",
-  "bio": "I'm a Full Stack Web Developer based in India, and I'm very passionate and dedicated to my work.",
-  "mainSkill": "Full Stack Web Developer",
-  "img": "/img/slider/avatar.png",
+  "bio": "We are a leading web design company in India .",
+  "mainSkill": "Website Design Company",
+  "img": "/img/slider/hero1.png",
   "skills": [
     {
       "name": "ReactJs",
@@ -49,7 +49,7 @@
   ],
   "contact": {
     "address": "Allahabad, Uttar Pradesh, India",
-    "email": "tripathihk2014@gmail.com",
+    "email": "harshtripathi@histoni.com",
     "phn": "+91 6387522891"
   }
 }

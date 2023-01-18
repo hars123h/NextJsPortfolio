@@ -22,7 +22,7 @@ const Skills = ({ dark }) => {
                 data-align="left"
               >
                 <span>Development is Life</span>
-                <h3>I Develop Skills Regularly to Keep Me Update</h3>
+                <h3>We Develop Skills Regularly to Keep you Update</h3>
                 <p>
                   Most common methods for  websites that work well on
                   desktop is responsive and adaptive design

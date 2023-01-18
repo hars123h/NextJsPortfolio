@@ -11,7 +11,7 @@ const About = ({ dark }) => {
                 <div className="numbers year">
                   <div className="wrapper">
                     <h3>
-                      <Counter end={18} />
+                      <Counter end={3} />+
                     </h3>
                     <span className="name">
                       Years of
@@ -23,7 +23,7 @@ const About = ({ dark }) => {
                 <div className="numbers project">
                   <div className="wrapper">
                     <h3>
-                      <Counter end={9} />K
+                      <Counter end={100} />+
                     </h3>
                     <span className="name">
                       Total
@@ -36,17 +36,13 @@ const About = ({ dark }) => {
             </div>
             <div className="right">
               <div className="title wow fadeInUp" data-wow-duration="1s">
-                <span>{`I'm a Freelancer`}</span>
-                <h3>I Can  Develop Anything You Want</h3>
+                <span>{`A Professional Website Design Company`}</span>
+                <h3>We Can  Develop Anything You Want</h3>
               </div>
               <div className="text wow fadeInUp" data-wow-duration="1s">
                 <p>
-                  {`Hello there! I'm a web designer, and I'm very passionate and
-                  dedicated to my work. With 20 years experience as a
-                  professional web developer, I have acquired the skills and
-                  knowledge necessary to make your project a success. I enjoy
-                  every step of the design process, from discussion and
-                  collaboration.`}
+                  {`We are a leading web design company in India providing responsive website design and development services, digital marketing,
+                   mobile app development, custom software development, and search engine optimisation for businesses worldwide.`}
                 </p>
               </div>
               <div

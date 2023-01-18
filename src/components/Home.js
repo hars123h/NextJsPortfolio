@@ -69,14 +69,14 @@ const Home = ({ dark }) => {
           <div className="content">
             <div className="details">
               <div className="hello">
-                <h3 className="orangeText">{`Hello, I'm`}</h3>
+                <h3 className="orangeText">{`Hello, We are`}</h3>
               </div>
               <div className="name">
                 <h3>{data && data.name ? data.name : "name"}</h3>
               </div>
               <div className="job">
                 <p>
-                  A <span className="greenText">{data && data.mainSkill}</span>{" "}
+                   <span className="greenText">{data && data.mainSkill}</span>{" "}
                   From <span className="purpleText">{data.address}</span>
                 </p>
               </div>
@@ -107,7 +107,7 @@ const Home = ({ dark }) => {
             <div className="avatar">
               <div className="image">
                 <img
-                  src={data && data.img ? data.img : "/img/slider/avatar.png"}
+                  src={data && data.img ? data.img : "/img/slider/hero1.png"}
                   alt="image"
                 />
 
